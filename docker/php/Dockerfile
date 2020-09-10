@@ -6,7 +6,7 @@
 #           comandos RUN, CMD, ENTRYPOINT, COPY E ADD
 
 # COPY:  É uma diretiva que copia um arquivo do host para dentro do container
-#        Ex.: COPY <DIRETORIO DE ORIGEM> <DIRETORIO DE DESTINO>
+#        Ex.: COPYls <DIRETORIO DE ORIGEM> <DIRETORIO DE DESTINO>
 
 # ENTRYPOINT: Permite você configurar um executável para o seu container
 
@@ -27,7 +27,7 @@ RUN apk add --no-cache $PHPIZE_DEPS \
     && pecl install xdebug-2.9.0 \
     && docker-php-ext-enable xdebug
 
-ENV timezone=America/Araguaina 
+ENV timezone=America/Belém 
 
 RUN ln -snf /usr/share/zoneinfo/${timezone} /etc/localtime && \
   echo ${timezone} > /etc/timezone && \
