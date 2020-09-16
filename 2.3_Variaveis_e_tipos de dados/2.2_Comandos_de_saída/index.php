@@ -39,6 +39,7 @@ if ($a || $b || $c || $d || $e) {
 } else {
     var_dump(false);
 }
+
 PHPClassSession('CALLBACKS', __LINE__);
 
 $code = "<article><h1> Call Back </h1></article>";
@@ -47,3 +48,11 @@ $codeclear = call_user_func("strip_tags", $code);
 var_dump($code, $codeclear);
 
 PHPClassSession('OUTROS TIPOS', __LINE__);
+
+$string = "Olá mundo";
+$array = [$string];
+$null = null;
+$int = 12345;
+$float = 2.2;
+
+var_dump($string, $array, $null, $int, $float);
