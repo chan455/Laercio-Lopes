@@ -12,7 +12,7 @@
 
 # EXPOSE: Informa o docker que o container irá escutar em uma porta tcp ou udp especifica
 
-FROM php:7.4.9-fpm-alpine
+FROM php:7.4.11-fpm-alpine
 
 RUN apk update
 RUN apk upgrade 
